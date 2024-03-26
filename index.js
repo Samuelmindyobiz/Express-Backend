@@ -13,21 +13,21 @@ const movies = [
     id: 1,
     movie: "Naruto Shippuden",
     genre: "Anime",
-    Description:
+    description:
       "Naruto is about a brave young ninja whose dream is to become, one day, the HOKAGE of the hidden leaf village",
   },
   {
     id: 2,
     movie: "One-Piece",
     genre: "Anime,Fantasy,Action",
-    Description:
+    description:
       "One piece is just one piece. Go watch it yourself and find out",
   },
   {
     id: 3,
     movie: "One Punch Man",
     genre: "Anime, Fantasy",
-    Description: "Just like the name says, one punch and you are crunch",
+    description: "Just like the name says, one punch and you are crunch",
   },
 ];
 

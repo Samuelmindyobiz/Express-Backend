@@ -9,9 +9,26 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 const movies = [
-  { id: 1, movie: "Naruto Shippuden", genre: "Anime" },
-  { id: 2, movie: "One-Piece", genre: "Anime,Fantasy,Action" },
-  { id: 3, movie: "One Punch Man", genre: "Anime, Fantasy" },
+  {
+    id: 1,
+    movie: "Naruto Shippuden",
+    genre: "Anime",
+    Description:
+      "Naruto is about a brave young ninja whose dream is to become, one day, the HOKAGE of the hidden leaf village",
+  },
+  {
+    id: 2,
+    movie: "One-Piece",
+    genre: "Anime,Fantasy,Action",
+    Description:
+      "One piece is just one piece. Go watch it yourself and find out",
+  },
+  {
+    id: 3,
+    movie: "One Punch Man",
+    genre: "Anime, Fantasy",
+    Description: "Just like the name says, one punch and you are crunch",
+  },
 ];
 
 app.get("/api/movies", (req, res) => {
@@ -31,6 +48,7 @@ app.post("/api/movies", (req, res) => {
     id: movies.length + 1,
     movie: req.body.movie,
     genre: req.body.genre,
+    description: req.body.description,
   };
 
   movies.push(newMovie);
